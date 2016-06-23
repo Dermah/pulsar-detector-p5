@@ -1,0 +1,24 @@
+{
+  "name": "@dermah/pulsar-detector-p5",
+  "version": "0.1.0",
+  "description": "Detect pulses and render them with p5.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dermah/pulsar-detector-p5.git"
+  },
+  "keywords": [
+    "pulsar",
+    "p5",
+    "processing"
+  ],
+  "author": "Dermah",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Dermah/pulsar-detector-p5/issues"
+  },
+  "homepage": "https://github.com/Dermah/pulsar-detector-p5#readme"
+}
