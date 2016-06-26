@@ -1,5 +1,5 @@
 # pulsar-detector-p5
-Detect pulses and render them with p5.js
+Detect pulses and render them with [p5.js](http://p5js.org/)
 
 ## Install
 
@@ -16,6 +16,16 @@ This uses `webpack` to bundle all the PULSAR client-side drawing code into `dist
     npm run watch
 
 to automatically build everything when you make a change
+
+## Run
+
+The file generated at `lib/index.js` should be run in a browser. If you served it to a browser as `pulsar.js`, put this in the html.
+
+```html
+<script src="pulsar.js"></script>
+```
+
+[p5](http://p5js.org/) will insert a `canvas` tag on the page, start receiving pulses from the server and draw its detections. 
 
 ## Make your own drawings
 
