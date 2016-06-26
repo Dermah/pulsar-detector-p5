@@ -1,6 +1,22 @@
 # pulsar-detector-p5
 Detect pulses and render them with p5.js
 
+## Install
+
+Clone this repo then
+
+    npm install
+
+## Build
+
+    npm run build
+
+This uses `webpack` to bundle all the PULSAR client-side drawing code into `dist/pulsar.js` which is served up by the web server later. You can also do
+
+    npm run watch
+
+to automatically build everything when you make a change
+
 ## Make your own drawings
 
 Making your own drawings is a bit like making a [p5.js](http://p5js.org/)/[Processing](https://processing.org/) sketch. There is a setup function (called when the drawing is activated initially), and a draw function (called every frame). Additionally, PULSAR drawings expose another function that indicate whether or not they have finished drawing, allowing the whole drawing to be garbage collected.
