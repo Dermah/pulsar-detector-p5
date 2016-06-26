@@ -2,10 +2,10 @@
   "name": "@dermah/pulsar-detector-p5",
   "version": "0.1.0",
   "description": "Detect pulses and render them with p5.js",
-  "main": "lib/pulsar.js",
+  "main": "lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack src/pulsar.js lib/pulsar.js --module-bind json",
+    "build": "webpack src/pulsar.js lib/index.js --module-bind json",
     "watch": "npm run build -- --watch",
     "prepublish": "npm run build"
   },
@@ -32,6 +32,6 @@
     "webpack": "^1.9.10"
   },
   "files": [
-    "lib/pulsar.js"
+    "lib/index.js"
   ]
 }
