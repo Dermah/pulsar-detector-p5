@@ -1,6 +1,6 @@
 {
   "name": "@dermah/pulsar-detector-p5",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Detect pulses and render them with p5.js",
   "main": "lib/index.js",
   "scripts": {
