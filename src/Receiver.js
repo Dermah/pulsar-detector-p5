@@ -5,23 +5,26 @@ var Receiver = function () {};
 Receiver.prototype = new events.EventEmitter;
 
 Receiver.prototype.connect = function() {
-  var self = this;
+  console.log('Attempting to connect socket.io to socket server: ' + window.location.href);
   var socket = io.connect(window.location.href);
-  console.log('Connected to socket server: ' + window.location.href);
-  
-  socket.on('pulse', function(data) {
+
+  socket.on('connect', data => {
+    console.log('CONNECTED: socket.io to socket server: ' + window.location.href);
+  })
+
+  socket.on('pulse', data => {
     console.log('Receiver: Received pulse');
-    self.emit('pulse', data);
+    this.emit('pulse', data);
   });
 
-  socket.on('pulsar control', function(data) {
+  socket.on('pulsar control', data => {
     console.log('Receiver: Received control pulse');
-    self.emit('pulsar control', data);
+    this.emit('pulsar control', data);
   });
 
-  socket.on('pulse update', function(data) {
+  socket.on('pulse update', data => {
     console.log('Receiver: Received update pulse');
-    self.emit('pulse update', data);
+    this.emit('pulse update', data);
   });
 }
 
