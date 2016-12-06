@@ -2,12 +2,13 @@
   "name": "@dermah/pulsar-detector-p5",
   "version": "0.1.1",
   "description": "Detect pulses and render them with p5.js",
-  "main": "lib/index.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack src/pulsar.js lib/index.js --module-bind json",
     "watch": "npm run build -- --watch",
-    "prepublish": "npm run build -- --optimize-minimize --optimize-dedupe"
+    "prepublish": "npm run build -- --optimize-minimize --optimize-dedupe",
+    "start": "node start.js"
   },
   "repository": {
     "type": "git",
@@ -25,9 +26,12 @@
   },
   "homepage": "https://github.com/Dermah/pulsar-detector-p5#readme",
   "dependencies": {
+    "express": "^4.14.0",
     "json-loader": "^0.5.2",
     "node-libs-browser": "^0.5.2",
+    "normalize-css": "^2.3.1",
     "p5": "^0.4.4",
+    "socket.io": "^1.7.1",
     "socket.io-client": "^1.3.5",
     "webpack": "^1.9.10"
   },
